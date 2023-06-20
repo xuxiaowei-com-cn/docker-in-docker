@@ -48,3 +48,5 @@ build:
     - docker push $CI_REGISTRY_IMAGE/my-docker-image:$CI_PIPELINE_ID
     - docker push $CI_REGISTRY_IMAGE/my-docker-image:latest
     # - docker run --rm $CI_REGISTRY_IMAGE/my-docker-image:$CI_PIPELINE_ID
+  only:
+    - main
