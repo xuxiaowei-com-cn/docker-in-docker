@@ -47,4 +47,4 @@ build:
     # 推送，参见：https://jihulab.com/xuxiaowei-com-cn/docker-in-docker/container_registry
     - docker push $CI_REGISTRY_IMAGE/my-docker-image:$CI_PIPELINE_ID
     - docker push $CI_REGISTRY_IMAGE/my-docker-image:latest
-    # - docker run my-docker-image:$CI_PIPELINE_ID
+    # - docker run --rm $CI_REGISTRY_IMAGE/my-docker-image:$CI_PIPELINE_ID
