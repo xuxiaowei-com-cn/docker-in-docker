@@ -53,3 +53,5 @@ build:
     # docker run --rm registry.jihulab.com/xuxiaowei-com-cn/docker-in-docker/my-docker-image:latest
   only:
     - main
+  tags:
+    - jihulab
