@@ -72,6 +72,10 @@
         - 编译 Maven 项目后，制作 Docker 镜像
     3. `node`
         - 编译 Node 项目后，制作 Docker 镜像
+    4. `docker.sock/main`
+        - 宿主机 docker.sock 直接制作 Docker 镜像
+    5. `docker.sock/maven`
+        - 宿主机 docker.sock 编译 Maven 项目后，制作 Docker 镜像
 2. [文档](https://www.yuque.com/xuxiaowei-com-cn/gitlab-k8s/docker-in-docker)
 
 ## 鸣谢
