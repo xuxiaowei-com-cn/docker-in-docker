@@ -78,6 +78,12 @@
         - 宿主机 docker.sock 编译 Maven 项目后，制作 Docker 镜像
     6. `docker.sock/node`
         - 宿主机 docker.sock 编译 Node 项目后，制作 Docker 镜像
+    7. `DOCKER_HOST/main`
+        - 使用 docker 远程调用端口 直接制作 Docker 镜像
+    8. `DOCKER_HOST/maven`
+        - 未完成
+    9. `DOCKER_HOST/node`
+        - 未完成
 2. [文档](https://www.yuque.com/xuxiaowei-com-cn/gitlab-k8s/docker-in-docker)
 
 ## 鸣谢
