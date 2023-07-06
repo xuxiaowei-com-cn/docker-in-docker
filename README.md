@@ -84,6 +84,8 @@
         - 未完成
     9. `DOCKER_HOST/node`
         - 未完成
+    10. `Dockerfile/DOCKER_HOST/maven`
+        - 未完成
 2. [文档](https://www.yuque.com/xuxiaowei-com-cn/gitlab-k8s/docker-in-docker)
 
 ## 鸣谢
