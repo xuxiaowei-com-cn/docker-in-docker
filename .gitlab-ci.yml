@@ -1,5 +1,7 @@
 stages:
   - build
+  # 代码同步
+  - sync
 
 # 参考：https://docs.gitlab.cn/jh/ci/docker/using_docker_build.html
 build:
@@ -51,7 +53,11 @@ build:
     # --rm：运行结束后删除
     # docker run --rm $CI_REGISTRY_IMAGE/my-docker-image:$CI_PIPELINE_ID
     # docker run --rm registry.jihulab.com/xuxiaowei-com-cn/docker-in-docker/my-docker-image:latest
-  only:
-    - main
-  tags:
-    - jihulab
+  # https://docs.gitlab.com/ee/ci/yaml/index.html#rules
+  rules:
+    - if: $CI_COMMIT_TAG
+
+# 嵌入
+include:
+  # 同步代码
+  - /sync.yml
