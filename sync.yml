@@ -182,7 +182,7 @@ sync-framagit:
     - git config --global user.name $GITLAB_USER_NAME
     - git config --global user.email
     - git config --global user.name
-    - git remote add framagit https://xuxiaowei-com-cn:$FRAMAGIT_PRIVATE_TOKEN@framagit.org/$CI_PROJECT_PATH.git
+    - git remote add framagit https://xuxiaowei:$FRAMAGIT_PRIVATE_TOKEN@framagit.org/$CI_PROJECT_PATH.git
     - echo 当前分支：$CI_COMMIT_BRANCH
     - echo 当前标签：$CI_COMMIT_TAG
     - if [ "$CI_COMMIT_BRANCH" ]; then
